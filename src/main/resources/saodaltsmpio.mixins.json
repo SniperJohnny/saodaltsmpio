@@ -3,7 +3,8 @@
 	"package": "io.sniperjohnny.github.saodaltsmpio.mixin",
 	"compatibilityLevel": "JAVA_21",
 	"mixins": [
-		"ExampleMixin"
+		"ExampleMixin",
+		"LiberatorMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1

@@ -8,6 +8,7 @@ import io.sniperjohnny.github.saodaltsmpio.moditems.ModFoodItems;
 import io.sniperjohnny.github.saodaltsmpio.moditems.ModRecipeItems;
 import io.sniperjohnny.github.saodaltsmpio.moditems.ModToolsItems;
 import io.sniperjohnny.github.saodaltsmpio.moditems.ModWeaponItems;
+import io.sniperjohnny.github.saodaltsmpio.networking.LiberatorNetworking;
 import net.fabricmc.api.ModInitializer;
 
 import net.minecraft.resources.ResourceLocation;
@@ -33,6 +34,8 @@ public class Saodaltsmpio implements ModInitializer {
 		ModFoodItems.initialize();
 		ModWeaponItems.initialize();
 		ModToolsItems.initialize();
+
+		LiberatorNetworking.register();
 
 
 		RecipeItemsCreativeModeTabs.initialize();

@@ -30,6 +30,8 @@ public class WeaponItemsCreativeModeTabs {
         ItemGroupEvents.modifyEntriesEvent(SAO_WEAPON_ITEM_GROUP_KEY).register(itemGroup -> {
             itemGroup.accept(ModWeaponItems.Elucidator);
             itemGroup.accept(ModWeaponItems.DARK_REPULSOR);
+            itemGroup.accept(ModWeaponItems.LIBERATOR_SHIELD);
+            itemGroup.accept(ModWeaponItems.LAMBENT_LIGHT);
 
             // ...
         });
