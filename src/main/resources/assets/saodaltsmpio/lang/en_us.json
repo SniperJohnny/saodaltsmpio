@@ -1,0 +1,25 @@
+{
+
+  "item.saodaltsmpio.crystallite_ore": "Crystallite Ore",
+  "item.saodaltsmpio.metall_scrap": "Metall Scrap",
+  "item.saodaltsmpio.metall": "Metall",
+  "item.saodaltsmpio.reinforced_leather_stick": "Reinforced Leather Stick",
+  "item.saodaltsmpio.rabbit_ragout": "Rabbit Ragout",
+  "item.saodaltsmpio.dark_repulsor": "Dark Repulsor",
+  "item.saodaltsmpio.elucidator": "Elucidator",
+  "item.saodaltsmpio.crystallite_pickaxe": "Crystallite Pickaxe",
+  "item.saodaltsmpio.crystallite_axe": "Crystallite Axe",
+  "item.saodaltsmpio.crystallite_shovel": "Crystallite Shovel",
+
+
+  "block.saodaltsmpio.crystallite_block": "Crystallite Block",
+
+
+  "effect.saodaltsmpio.rabbit_ragout": "Fullfilled",
+
+  "itemgroup.saodaltsmpio_recipe_item_group": " SAO Recipe Ingredients",
+  "itemgroup.saodaltsmpio_food_item_group": "SAO Food",
+  "itemgroup.saodaltsmpio_tool_item_group": "SAO Tools",
+  "itemgroup.saodaltsmpio_weapon_item_group": "SAO Weapons"
+
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "saodaltsmpio:item/reinforced_leather_stick"
+  }
+}

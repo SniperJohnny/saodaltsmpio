@@ -1,0 +1,41 @@
+{
+	"schemaVersion": 1,
+	"id": "saodaltsmpio",
+	"version": "${version}",
+	"name": "saodaltsmpio",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/saodaltsmpio/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"io.sniperjohnny.github.saodaltsmpio.Saodaltsmpio"
+		],
+		"client": [
+			"io.sniperjohnny.github.saodaltsmpio.client.SaodaltsmpioClient"
+		],
+		"fabric-datagen": [
+          "io.sniperjohnny.github.saodaltsmpio.client.datagen.SaodaltsmpioDataGenerator"
+		]
+	},
+	"mixins": [
+		"saodaltsmpio.mixins.json",
+		{
+			"config": "saodaltsmpio.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.19.5",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
