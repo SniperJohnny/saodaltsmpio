@@ -5,6 +5,7 @@ import io.sniperjohnny.github.saodaltsmpio.toolmaterials.CrystalliteToolMaterial
 import net.minecraft.world.entity.ai.attributes.AttributeModifier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.SwordItem;
 import net.minecraft.resources.ResourceLocation;
 
@@ -16,6 +17,7 @@ public class LambentLightItem extends SwordItem {
     public LambentLightItem() {
         super(CrystalliteToolMaterial.INSTANCE,
             new Item.Properties()
+                    .rarity(Rarity.EPIC)
                 .fireResistant()
                 .attributes(SwordItem.createAttributes(CrystalliteToolMaterial.INSTANCE, 4, -2.4F)
                     // Attack range attribute not available in this version

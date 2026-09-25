@@ -4,7 +4,6 @@ import io.sniperjohnny.github.saodaltsmpio.moditems.ModWeaponItems;
 import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.player.LocalPlayer;
-import net.minecraft.world.item.ItemStack;
 
 public class LiberatorClientHandler {
     private static int cooldown = 0;
@@ -25,7 +24,7 @@ public class LiberatorClientHandler {
 
         if (LiberatorKeybinds.TOGGLE_LIBERATOR.consumeClick()) {
             if (hasLiberatorShieldInOffhand(player)) {
-                boolean swordToShield = player.getMainHandItem().is(ModWeaponItems.LIBERATOR_SWORD);
+                boolean swordToShield = player.getMainHandItem().is(ModWeaponItems.Liberator_Sword);
                 LiberatorClientNetworking.sendSwapRequest(swordToShield);
                 cooldown = COOLDOWN_TICKS;
             }
@@ -33,6 +32,6 @@ public class LiberatorClientHandler {
     }
 
     private static boolean hasLiberatorShieldInOffhand(LocalPlayer player) {
-        return player.getOffhandItem().is(ModWeaponItems.LIBERATOR_SHIELD);
+        return player.getOffhandItem().is(ModWeaponItems.Liberator_Shield);
     }
 }

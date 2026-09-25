@@ -29,8 +29,9 @@ public class ModModelProvider extends FabricModelProvider {
 
 
         itemModelGenerator.generateFlatItem(ModWeaponItems.Elucidator, ModelTemplates.FLAT_HANDHELD_ITEM);
-        itemModelGenerator.generateFlatItem(ModWeaponItems.DARK_REPULSOR, ModelTemplates.FLAT_HANDHELD_ITEM);
-        itemModelGenerator.generateFlatItem(ModWeaponItems.LAMBENT_LIGHT, ModelTemplates.FLAT_HANDHELD_ITEM);
+        itemModelGenerator.generateFlatItem(ModWeaponItems.Dark_Repulsor, ModelTemplates.FLAT_HANDHELD_ITEM);
+        itemModelGenerator.generateFlatItem(ModWeaponItems.Lambent_Light, ModelTemplates.FLAT_HANDHELD_ITEM);
+        itemModelGenerator.generateFlatItem(ModWeaponItems.Zoringen_Hammer, ModelTemplates.FLAT_HANDHELD_MACE_ITEM);
 
 
         itemModelGenerator.generateFlatItem(ModToolsItems.Crystallite_pickaxe, ModelTemplates.FLAT_HANDHELD_ITEM);

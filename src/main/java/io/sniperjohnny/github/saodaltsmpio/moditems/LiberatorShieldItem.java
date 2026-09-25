@@ -11,6 +11,7 @@ import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.ShieldItem;
 import net.minecraft.world.level.Level;
 
@@ -21,7 +22,7 @@ public class LiberatorShieldItem extends ShieldItem {
     public LiberatorShieldItem() {
         super(new Item.Properties()
             .durability(MAX_DURABILITY)
-            .fireResistant());
+            .fireResistant().rarity(Rarity.EPIC));
     }
 
     @Override

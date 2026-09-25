@@ -1,7 +1,6 @@
 package io.sniperjohnny.github.saodaltsmpio.creativemodetabs;
 
 import io.sniperjohnny.github.saodaltsmpio.Saodaltsmpio;
-import io.sniperjohnny.github.saodaltsmpio.moditems.ModRecipeItems;
 import io.sniperjohnny.github.saodaltsmpio.moditems.ModWeaponItems;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
@@ -29,9 +28,9 @@ public class WeaponItemsCreativeModeTabs {
                 , SAO_WEAPON_ITEM_GROUP).canScroll();
         ItemGroupEvents.modifyEntriesEvent(SAO_WEAPON_ITEM_GROUP_KEY).register(itemGroup -> {
             itemGroup.accept(ModWeaponItems.Elucidator);
-            itemGroup.accept(ModWeaponItems.DARK_REPULSOR);
-            itemGroup.accept(ModWeaponItems.LIBERATOR_SHIELD);
-            itemGroup.accept(ModWeaponItems.LAMBENT_LIGHT);
+            itemGroup.accept(ModWeaponItems.Dark_Repulsor);
+            itemGroup.accept(ModWeaponItems.Liberator_Shield);
+            itemGroup.accept(ModWeaponItems.Lambent_Light);
 
             // ...
         });

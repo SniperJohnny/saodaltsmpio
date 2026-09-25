@@ -2,7 +2,6 @@ package io.sniperjohnny.github.saodaltsmpio.networking;
 
 import io.sniperjohnny.github.saodaltsmpio.Saodaltsmpio;
 import io.sniperjohnny.github.saodaltsmpio.moditems.ModWeaponItems;
-import net.fabricmc.fabric.api.networking.v1.PacketByteBufs;
 import net.fabricmc.fabric.api.networking.v1.ServerPlayNetworking;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.network.codec.StreamCodec;
@@ -37,14 +36,14 @@ public class LiberatorNetworking {
     private static void handleSwap(ServerPlayer player, boolean swordToShield) {
         if (swordToShield) {
             ItemStack mainhand = player.getMainHandItem();
-            if (!mainhand.is(ModWeaponItems.LIBERATOR_SWORD)) return;
+            if (!mainhand.is(ModWeaponItems.Liberator_Sword)) return;
 
-            ItemStack shield = new ItemStack(ModWeaponItems.LIBERATOR_SHIELD);
+            ItemStack shield = new ItemStack(ModWeaponItems.Liberator_Shield);
             player.setItemInHand(InteractionHand.OFF_HAND, shield);
             player.setItemInHand(InteractionHand.MAIN_HAND, ItemStack.EMPTY);
         } else {
             ItemStack offhand = player.getOffhandItem();
-            if (!offhand.is(ModWeaponItems.LIBERATOR_SHIELD)) return;
+            if (!offhand.is(ModWeaponItems.Liberator_Shield)) return;
 
             ItemStack sword = createPreEnchantedLiberatorSword();
             player.setItemInHand(InteractionHand.OFF_HAND, ItemStack.EMPTY);
@@ -53,6 +52,6 @@ public class LiberatorNetworking {
     }
 
     private static ItemStack createPreEnchantedLiberatorSword() {
-        return new ItemStack(ModWeaponItems.LIBERATOR_SWORD);
+        return new ItemStack(ModWeaponItems.Liberator_Sword);
     }
 }

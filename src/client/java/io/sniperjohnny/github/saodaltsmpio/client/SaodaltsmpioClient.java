@@ -10,7 +10,7 @@ public class SaodaltsmpioClient implements ClientModInitializer {
 	public void onInitializeClient() {
 		LiberatorKeybinds.register();
 		LiberatorClientHandler.register();
-		ItemProperties.register(ModWeaponItems.LIBERATOR_SHIELD,
+		ItemProperties.register(ModWeaponItems.Liberator_Shield,
 			ResourceLocation.withDefaultNamespace("blocking"),
 			(stack, level, entity, seed) -> {
 				return entity != null && entity.isUsingItem() && entity.getUseItem() == stack ? 1.0f : 0.0f;
